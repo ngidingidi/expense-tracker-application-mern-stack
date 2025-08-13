@@ -1,0 +1,194 @@
+#root {
+  max-width: 1280px;
+  text-align: center;
+  padding: 2em;
+  margin: 0 auto;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin-left: 200px;
+}
+
+.p-login {
+  margin-right: 30px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+.p-register {
+  margin-right: 30px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+
+input[type=text], input[type=password], input[type=email] {
+  width: 80%;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  width: 70%;
+}
+
+.btn-fetch {
+  background-color: green;
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+}
+
+.btn-login {
+  background-color: rgb(123, 121, 121);
+  width: 100%;
+  margin-left: 0%;
+}
+
+.reg-h2, .log-h2 {
+  margin-left: 200px;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+.app-nav a {
+  background-color:rgb(114, 170, 180);
+  text-decoration:none;
+  color:blanchedalmond;
+  line-height:1;
+  vertical-align:middle;
+  border-right: 2px solid blanchedalmond;
+  font-size:1.3em;
+  font-weight:bold;
+  margin: 5px;
+}
+
+.app-nav a:hover {
+  color:rgb(139, 186, 194);
+  background-color:rgb(247, 218, 174);
+}
+
+.app-link {
+  color: #dafb61;
+}
+
+table {
+    border: 1.5px solid purple;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 1%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    position: relative;
+    font-family: 'Trebuchet MS', sans-serif;
+    width: 1000px;
+}
+thead {
+    width: 100%;
+    border:1px dashed gray;
+    background-color: bisque;
+    border-collapse: collapse;
+}
+tr td {
+    border: 1px dashed grey;
+    padding-left: 2%;
+    border-collapse: collapse;
+    overflow: hidden;
+    width: 100px;
+    color: #535bf2;
+}
+
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.action-desc {
+  margin-top: 1%;
+}
+
+fieldset {
+  border: 1.5px solid purple;
+}
+
+legend {
+  background-color: #000;
+  color: #fff;
+  padding: 3px 6px;
+}
+
+.form-add {
+  width: 300px;
+}
+
+select {
+  padding: 5px;
+}
+
+.btn-add {
+  background-color: green;
+  border-radius: 10px;
+}
+
+.curr-conv {
+  margin-left: 5px;
+  background-color: green;
+}
+
+.log-out {
+  margin-left: 30%;
+  background-color: green;
+  border-radius: 10px;
+}
+
+.app-nav select {
+    margin: 0 0.5rem;
+    padding: 0.4rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.help-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.help-list {
+  list-style-type: "\1F44D";
+  list-style-position: outside;
+  padding-left: 1.5em;
+  margin-left: 1em;
+}
+
+.profile-card {
+  background-color: #f3f6f9;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.profile-row {
+  display: flex;
+  margin-bottom: 0.75rem;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.profile-label {
+  flex-basis: 120px;  
+  font-weight: bold;
+  color: #333;
+}
+
