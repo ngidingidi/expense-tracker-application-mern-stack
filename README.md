@@ -1,5 +1,5 @@
 # About
-This is an Expense Tracker MERN application which helps user keep tracker of their spending on different expenses. It uses React for frontend and NodeJS and Express for backend. Data is stored in MongoDB.
+This is an Expense Tracker MERN application which helps users keep tracker of their spending on different expenses. It uses React for frontend and NodeJS and Express for backend. Data is stored in MongoDB.
 
 ## 1. TBD
 TBD
