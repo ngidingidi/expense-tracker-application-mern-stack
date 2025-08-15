@@ -4,15 +4,16 @@ https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/m
 
 
 ## 1. Main features
-After log in user can create or add an expense by filling out a form (show it)
-User can edit an expense (show it)
-User can delete and expense (show it)
-There is also a Help feature on the Navigation Menu which users can refer to to get detailed instructions on how to use the application
-effectively. It also provides them with an email address and phone number to call if they run into issues with the app. (show it)
-User can log out (show it)
+The application allows the user to create an account and log in.
 
+After log in the user can create or add an expense by filling out a form.
 
-TBD:
+The user can edit an expense or delete it. 
+
+There is also a Help feature on the Navigation Menu which users can refer to to get detailed instructions on how to use the application effectively. It also provides them with an email address and phone number to call if they run into issues with the app.
+
+The application also allows the user to log out.
+
 ```
 
 ```
