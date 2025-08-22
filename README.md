@@ -23,7 +23,7 @@ The application also allows the user to log out.
 Microservice A was provided by my Teammate, Hana. It provides a way to convert the expenses from USD to other currencies (MXN pesos at the moment) but could be expanded to other currencies in the future.
 
 Microservice B allows the user to check the weather for a specific valid US zip code in case they want to venture out and go shopping.
-It uses the <a href="https://freecurrencyapi.com/">FreeCurrency API</a> to fetch the local weather for a valid zip code.
+It uses the <a href="https://openweathermap.org/api">Open Weather API</a> to fetch the local weather for a valid zip code.
 
 Microservice C allows the user to visualize a Bar/Line Chart of their monthly expenses so that they can visually see how they spend their money on groceries, entertainment, or other categories.
 
@@ -35,6 +35,6 @@ Microservice D allows the user to view their user profile settings and preferenc
 
 ## 3. UML Diagram 
 
-<img width="860" height="554" alt="image" src="" />
+<img width="860" height="554" alt="image" src="./images/uml_microservices.PNG" />
 
 
