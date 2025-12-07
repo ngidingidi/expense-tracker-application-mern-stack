@@ -12,8 +12,9 @@ function Login() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000';
         //axios.post('http://localhost:3000/login', {email, password})
-        axios.post('https://expense-tracker-application-mern-stack-axas.onrender.com/login', {email, password})
+        axios.post(`${API_BASE}/login`, {email, password})
         .then(result => {
             console.log(result)
             if (result.statusText === "OK" && result.data !== "No record exists"

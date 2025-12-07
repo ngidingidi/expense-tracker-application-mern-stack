@@ -17,7 +17,7 @@ export const AddExpensePage = () => {
     const addExpense = (e) => {
         e.preventDefault();
        
-        axios.post('http://localhost:3000/expenses', {date, name, amount, zipCode, category, userEmail})
+        axios.post('https://expense-tracker-application-mern-stack-axas.onrender.com/expenses', {date, name, amount, zipCode, category, userEmail})
         .then(result => {
             console.log(result)
             if (result.status === 201) {

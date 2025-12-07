@@ -26,7 +26,7 @@ export const EditExpensePage = ({expenseToEdit}) => {
         e.preventDefault();
         //console.log(name);
         
-        axios.put(`http://localhost:3000/expenses/${expenseToEdit._id}`, {date, name, amount, zipCode, 
+        axios.put(`https://expense-tracker-application-mern-stack-axas.onrender.com/expenses/${expenseToEdit._id}`, {date, name, amount, zipCode, 
                                                                          category, userEmail})
         .then(result => {
             console.log(result)
