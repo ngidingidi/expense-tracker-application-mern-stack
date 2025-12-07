@@ -13,7 +13,7 @@ function Home({setExpenseToEdit}) {
 
     const loadExpenses = async () => {
         //const response = await axios.get(`http://localhost:3000/expenses/${userEmail}`);
-        const response = await axios.get(`https://expense-tracker-application-mern-stack-axas.onrender.com/login/expenses/${userEmail}`);
+        const response = await axios.get(`https://expense-tracker-application-mern-stack-axas.onrender.com/expenses/${userEmail}`);
         //console.log(response.data, typeof response.data)
         //const expenses = await response.json();
         setExpenses(response.data);
