@@ -37,4 +37,34 @@ Microservice D allows the user to view their user profile settings and preferenc
 
 <img width="860" height="554" alt="image" src="./images/uml_microservices.PNG" />
 
+## 4. How to run
+
+After cloning, run cd server\expense tracker and create .env file with the following contents appropriately updated:
+
+```
+PORT=XXXX
+PORT2=XXXX
+PORT3=XXXX
+PORT4 = XXXX
+PORT5 = XXXX
+MONGODB_CONNECT_STRING='XXX'
+API_KEY = 'XXX'
+```
+
+Open a terminal and run the following commands: 
+
+```
+cd client
+npm install
+npm run dev
+```
+
+Open another terminal and run:
+
+```
+cd server\expense_tracker
+npm install
+npm start
+```
+
 

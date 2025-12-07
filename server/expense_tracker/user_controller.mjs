@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-dotenv.config({ path: '../.env' });
+dotenv.config({ path: '.env' });
 import express from 'express';
 import asyncHandler from 'express-async-handler';
 import * as users from './user_model.mjs';
