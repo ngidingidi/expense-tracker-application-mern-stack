@@ -12,7 +12,8 @@ function Home({setExpenseToEdit}) {
     const userEmail = localStorage.getItem("emailAddress");
 
     const loadExpenses = async () => {
-        const response = await axios.get(`http://localhost:3000/expenses/${userEmail}`);
+        //const response = await axios.get(`http://localhost:3000/expenses/${userEmail}`);
+        const response = await axios.get(`https://expense-tracker-application-mern-stack-axas.onrender.com/login/expenses/${userEmail}`);
         //console.log(response.data, typeof response.data)
         //const expenses = await response.json();
         setExpenses(response.data);
@@ -34,7 +35,8 @@ function Home({setExpenseToEdit}) {
 
         const onDelete = async (_id) => {
             
-            const response = await axios.delete(`http://localhost:3000/expenses/${_id}`);
+            //const response = await axios.delete(`http://localhost:3000/expenses/${_id}`);
+            const response = await axios.delete(`https://expense-tracker-application-mern-stack-axas.onrender.com/expenses/${_id}`);
             //console.log(response);
             if (response.status === 204) {
                                     alert(`Successfully deleted the expense with id = ${_id}`);
