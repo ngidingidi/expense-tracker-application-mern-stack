@@ -33,6 +33,7 @@ function Login() {
              if (result.data === "No record exists") {
                 alert("No record exists. Register first");
             }
+            alert("Successfully logged in");
             
         })
         .catch(err => console.log(err))
