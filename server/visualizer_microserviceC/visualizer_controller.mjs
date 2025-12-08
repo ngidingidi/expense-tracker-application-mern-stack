@@ -7,7 +7,7 @@ import cors from 'cors';
 
 const ERROR_INVALID_REQ = {Error: 'Invalid request'};
 const ERROR_NOT_FOUND = {Error: "Not found"};
-const PORT = process.env.PORT2;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(express.json());
