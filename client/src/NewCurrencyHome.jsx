@@ -13,7 +13,7 @@ function NewCurrencyHome({setExpenseToEdit}) {
     const userEmail = localStorage.getItem("emailAddress");
 
     const loadExpenses = async () => {
-        const response = await axios.get(`http://localhost:3000/expenses/${userEmail}`);
+        const response = await axios.get(`https://expense-tracker-application-mern-stack-axas.onrender.com/expenses/${userEmail}`);
         setExpenses(response.data);
         };
 
@@ -53,7 +53,7 @@ function NewCurrencyHome({setExpenseToEdit}) {
 
         const onDelete = async (_id) => {
             
-            const response = await axios.delete(`http://localhost:3000/expenses/${_id}`);
+            const response = await axios.delete(`https://expense-tracker-application-mern-stack-axas.onrender.com/expenses/${_id}`);
             if (response.status === 204) {
                                     alert(`Successfully deleted the expense with id = ${_id}`);
 
