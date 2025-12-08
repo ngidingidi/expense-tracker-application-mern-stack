@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-dotenv.config({ path: '../.env' });
+dotenv.config({ path: '.env' });
 import express from 'express';
 import asyncHandler from 'express-async-handler';
 import * as users from './visualizer_model.mjs';
@@ -11,7 +11,10 @@ const PORT = process.env.PORT2;
 const app = express();
 
 app.use(express.json());
-app.use(cors())
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://expense-tracker-application-da78.onrender.com'],
+  credentials: true
+}));
 
 app.listen(PORT, async () => {
     await users.connect()
