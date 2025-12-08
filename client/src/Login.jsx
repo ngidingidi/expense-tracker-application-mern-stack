@@ -14,11 +14,17 @@ function Login() {
         e.preventDefault();
         const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000';
         //axios.post('http://localhost:3000/login', {email, password})
+
+        
+        if (!email || !password) {
+            alert("Please enter email and password");
+            return;
+        }
+
         axios.post(`${API_BASE}/login`, {email, password})
         .then(result => {
             console.log(result)
-            if (result.status === 200 && result.data !== "No record exists"
-                && result.data !== "The password is not correct") {
+            if (result.status === 200 && result.data && typeof result.data === 'object' && result.data.name) {
                 // Store a token or flag when login is successful. Persists when user refreshes page
                 localStorage.setItem("isLoggedIn", "true");
 
