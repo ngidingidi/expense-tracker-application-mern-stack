@@ -15,7 +15,8 @@ function BarGraph() {
     const userEmail = localStorage.getItem("emailAddress");
     
     const loadExpenses = async () => {
-            const response = await axios.get(`http://localhost:5000/expenses/${userEmail}`);
+            //const response = await axios.get(`http://localhost:5000/expenses/${userEmail}`);
+            const response = await axios.get(`https://expense-tracker-application-visualizer.onrender.com/expenses/${userEmail}`);
             setExpenses(response.data);
             }
     
