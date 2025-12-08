@@ -17,7 +17,7 @@ function Login() {
         axios.post(`${API_BASE}/login`, {email, password})
         .then(result => {
             console.log(result)
-            if (result.statusText === "OK" && result.data !== "No record exists"
+            if (result.status === 200 && result.data !== "No record exists"
                 && result.data !== "The password is not correct") {
                 // Store a token or flag when login is successful. Persists when user refreshes page
                 localStorage.setItem("isLoggedIn", "true");
@@ -25,6 +25,7 @@ function Login() {
                 // Also store user name and email address
                 localStorage.setItem("emailAddress", email);
                 localStorage.setItem("name", result.data.name);
+                alert("Successfully logged in");
                 navigate('/home')
             }
             if (result.data === "The password is not correct") {
@@ -33,7 +34,6 @@ function Login() {
              if (result.data === "No record exists") {
                 alert("No record exists. Register first");
             }
-            alert("Successfully logged in");
             
         })
         .catch(err => console.log(err))
